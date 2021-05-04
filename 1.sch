@@ -300,13 +300,13 @@ Wire Wire Line
 Wire Wire Line
 	3000 6600 3800 6600
 Text HLabel 3800 6500 2    50   Input ~ 0
-SD_CS
+PB12
 Text HLabel 3800 6600 2    50   Input ~ 0
-SD_DI
+PB15
 Text HLabel 3800 6800 2    50   Input ~ 0
-SD_SCLK
+PB13
 Text HLabel 3800 7000 2    50   Input ~ 0
-SD_DO
+PB14
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 609A034E
@@ -371,20 +371,16 @@ Wire Wire Line
 	1500 4500 1350 4500
 Wire Wire Line
 	5450 5150 5550 5150
-Text HLabel 5450 5250 0    50   Input ~ 0
-SD_SCLK
 Wire Wire Line
 	5450 5250 5550 5250
-Text HLabel 5450 5150 0    50   Input ~ 0
-SD_CS
 Wire Wire Line
 	5550 5350 5450 5350
 Wire Wire Line
 	5450 5450 5550 5450
 Text HLabel 5450 5350 0    50   Input ~ 0
-SD_DO
+PB14
 Text HLabel 5450 5450 0    50   Input ~ 0
-SD_DI
+PB15
 Text HLabel 5450 2850 0    50   Input ~ 0
 NRST
 Wire Wire Line
@@ -1110,8 +1106,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 2600 6950 2750
 Connection ~ 6450 2600
-Text HLabel 2750 4500 2    50   Input ~ 0
-RG_LED
 Wire Wire Line
 	10400 2700 10600 2700
 Wire Wire Line
@@ -1579,59 +1573,59 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0120
 U 1 1 61290385
-P 4650 6400
-F 0 "#PWR0120" H 4650 6250 50  0001 C CNN
-F 1 "+3V3" H 4665 6573 50  0000 C CNN
-F 2 "" H 4650 6400 50  0001 C CNN
-F 3 "" H 4650 6400 50  0001 C CNN
-	1    4650 6400
-	1    0    0    -1  
+P 4900 6400
+F 0 "#PWR0120" H 4900 6250 50  0001 C CNN
+F 1 "+3V3" H 4915 6573 50  0000 C CNN
+F 2 "" H 4900 6400 50  0001 C CNN
+F 3 "" H 4900 6400 50  0001 C CNN
+	1    4900 6400
+	-1   0    0    -1  
 $EndComp
-Text HLabel 4650 7000 0    50   Input ~ 0
-SD_CS
+Text HLabel 4900 7000 2    50   Input ~ 0
+PB12
 Wire Wire Line
-	4650 6500 4750 6500
+	4900 6500 4800 6500
 Wire Wire Line
-	4650 6400 4650 6500
+	4900 6400 4900 6500
 Wire Wire Line
-	4650 6600 4750 6600
+	4900 6600 4800 6600
 Wire Wire Line
-	4650 6700 4750 6700
+	4900 6700 4800 6700
 Wire Wire Line
-	4650 6800 4750 6800
-Text HLabel 4650 6600 0    50   Input ~ 0
-SD_DI
-Text HLabel 4650 6700 0    50   Input ~ 0
-SD_DO
-Text HLabel 4650 6800 0    50   Input ~ 0
-SD_SCLK
+	4900 6800 4800 6800
+Text HLabel 4900 6600 2    50   Input ~ 0
+PB15
+Text HLabel 4900 6700 2    50   Input ~ 0
+PB14
+Text HLabel 4900 6800 2    50   Input ~ 0
+PB13
 Wire Wire Line
-	4700 6900 4700 7150
+	4850 6900 4850 7150
 $Comp
 L power:GND #PWR0124
 U 1 1 61009CA8
-P 4700 7150
-F 0 "#PWR0124" H 4700 6900 50  0001 C CNN
-F 1 "GND" H 4705 6977 50  0000 C CNN
-F 2 "" H 4700 7150 50  0001 C CNN
-F 3 "" H 4700 7150 50  0001 C CNN
-	1    4700 7150
-	1    0    0    -1  
+P 4850 7150
+F 0 "#PWR0124" H 4850 6900 50  0001 C CNN
+F 1 "GND" H 4855 6977 50  0000 C CNN
+F 2 "" H 4850 7150 50  0001 C CNN
+F 3 "" H 4850 7150 50  0001 C CNN
+	1    4850 7150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 6900 4700 6900
+	4800 6900 4850 6900
 Wire Wire Line
-	4650 7000 4750 7000
+	4900 7000 4800 7000
 $Comp
 L Connector_Generic:Conn_01x06 J9
 U 1 1 61009C91
-P 4950 6700
-F 0 "J9" H 5030 6692 50  0000 L CNN
-F 1 "SPI2" H 5030 6601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5030 6555 50  0001 L CNN
-F 3 "~" H 4950 6700 50  0001 C CNN
-	1    4950 6700
-	1    0    0    -1  
+P 4600 6700
+F 0 "J9" H 4680 6692 50  0000 L CNN
+F 1 "SPI2" H 4680 6601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4680 6555 50  0001 L CNN
+F 3 "~" H 4600 6700 50  0001 C CNN
+	1    4600 6700
+	-1   0    0    -1  
 $EndComp
 Connection ~ 4200 5300
 Wire Wire Line
@@ -1719,4 +1713,10 @@ Text HLabel 4300 4800 2    50   Input ~ 0
 PB11
 Text HLabel 4300 4900 2    50   Input ~ 0
 PB10
+Text HLabel 5450 5250 0    50   Input ~ 0
+PB13
+Text HLabel 5450 5150 0    50   Input ~ 0
+PB12
+Text HLabel 2750 4500 2    50   Input ~ 0
+RG_LED
 $EndSCHEMATC
