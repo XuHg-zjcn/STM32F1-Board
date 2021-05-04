@@ -1825,7 +1825,7 @@
     (tags "SMD SMT button")
     (path /60835193)
     (attr smd)
-    (fp_text reference PA0D (at 0.0172 2.54) (layer F.SilkS)
+    (fp_text reference KPA0 (at 0.0172 2.54) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value KPA0 (at 1.71 2.54) (layer F.Fab)
