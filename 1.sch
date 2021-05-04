@@ -25,10 +25,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:C C13
 U 1 1 60803DC4
 P 1350 4750
-F 0 "C1" H 1465 4796 50  0000 L CNN
+F 0 "C13" H 1465 4796 50  0000 L CNN
 F 1 "104" H 1465 4705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 4600 50  0001 C CNN
 F 3 "~" H 1350 4750 50  0001 C CNN
@@ -186,10 +186,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 1450 1000 1450
 $Comp
-L pspice:CAP C2
+L pspice:CAP C9
 U 1 1 60899DE9
 P 1500 1450
-F 0 "C2" V 1706 1612 50  0000 C BNN
+F 0 "C9" V 1706 1612 50  0000 C BNN
 F 1 "20p" V 1607 1612 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1450 50  0001 C CNN
 F 3 "~" H 1500 1450 50  0001 C CNN
@@ -199,10 +199,10 @@ $EndComp
 Wire Wire Line
 	1000 1450 1000 1850
 $Comp
-L pspice:CAP C3
+L pspice:CAP C10
 U 1 1 6092BDFE
 P 1500 1850
-F 0 "C3" V 1706 2012 50  0000 C BNN
+F 0 "C10" V 1706 2012 50  0000 C BNN
 F 1 "20p" V 1607 2012 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1850 50  0001 C CNN
 F 3 "~" H 1500 1850 50  0001 C CNN
@@ -210,10 +210,10 @@ F 3 "~" H 1500 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:CAP C4
+L pspice:CAP C11
 U 1 1 6092C5E0
 P 1500 2300
-F 0 "C4" V 1706 2462 50  0000 C BNN
+F 0 "C11" V 1706 2462 50  0000 C BNN
 F 1 "12p" V 1607 2462 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2300 50  0001 C CNN
 F 3 "~" H 1500 2300 50  0001 C CNN
@@ -221,10 +221,10 @@ F 3 "~" H 1500 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:CAP C5
+L pspice:CAP C12
 U 1 1 6092D115
 P 1500 2700
-F 0 "C5" V 1706 2862 50  0000 C BNN
+F 0 "C12" V 1706 2862 50  0000 C BNN
 F 1 "12p" V 1607 2862 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2700 50  0001 C CNN
 F 3 "~" H 1500 2700 50  0001 C CNN
@@ -362,10 +362,10 @@ Wire Wire Line
 	3500 6050 3500 6900
 Connection ~ 3250 6050
 $Comp
-L pspice:C C6
+L pspice:C C8
 U 1 1 60A0DA04
 P 3500 7150
-F 0 "C6" H 3678 7196 50  0000 L CNN
+F 0 "C8" H 3678 7196 50  0000 L CNN
 F 1 "104" H 3678 7105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 7150 50  0001 C CNN
 F 3 "~" H 3500 7150 50  0001 C CNN
@@ -497,10 +497,10 @@ F 3 "" H 9450 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J5
+L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 608D3B31
 P 9050 2800
-F 0 "J5" H 9100 3117 50  0000 C CNN
+F 0 "J4" H 9100 3117 50  0000 C CNN
 F 1 "Protected" H 9100 3026 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9050 2800 50  0001 C CNN
 F 3 "~" H 9050 2800 50  0001 C CNN
@@ -536,10 +536,10 @@ $EndComp
 Wire Wire Line
 	9000 4750 9000 5000
 $Comp
-L Connector_Generic:Conn_01x10 J7
+L Connector_Generic:Conn_01x10 J5
 U 1 1 60BF7B89
 P 8100 4350
-F 0 "J7" H 8180 4342 50  0000 L CNN
+F 0 "J5" H 8180 4342 50  0000 L CNN
 F 1 "ADC" H 8180 4251 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8100 4350 50  0001 C CNN
 F 3 "~" H 8100 4350 50  0001 C CNN
@@ -558,10 +558,10 @@ F 3 "~" H 1950 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J8
+L Connector_Generic:Conn_01x04 J7
 U 1 1 60F3F899
 P 10250 4650
-F 0 "J8" H 10330 4642 50  0000 L CNN
+F 0 "J7" H 10330 4642 50  0000 L CNN
 F 1 "UART1" H 10330 4551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10250 4650 50  0001 C CNN
 F 3 "~" H 10250 4650 50  0001 C CNN
@@ -779,10 +779,10 @@ F 3 "~" H 1900 2500 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:C_Small C11
+L Device:C_Small C7
 U 1 1 6096DC0F
 P 4400 2650
-F 0 "C11" H 4492 2696 50  0000 L CNN
+F 0 "C7" H 4492 2696 50  0000 L CNN
 F 1 "104" H 4492 2605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4400 2650 50  0001 C CNN
 F 3 "~" H 4400 2650 50  0001 C CNN
@@ -804,10 +804,10 @@ Connection ~ 4400 2850
 Wire Wire Line
 	4400 2850 4400 2900
 $Comp
-L Device:C_Small C13
+L Device:C_Small C6
 U 1 1 60A78AA2
 P 6950 2850
-F 0 "C13" H 7042 2896 50  0000 L CNN
+F 0 "C6" H 7042 2896 50  0000 L CNN
 F 1 "104" H 7042 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6950 2850 50  0001 C CNN
 F 3 "~" H 6950 2850 50  0001 C CNN
@@ -839,10 +839,10 @@ Wire Wire Line
 Wire Wire Line
 	10600 2500 10600 2600
 $Comp
-L Connector_Generic:Conn_01x05 J4
+L Connector_Generic:Conn_01x05 J3
 U 1 1 60DF5E87
 P 10800 2800
-F 0 "J4" H 10880 2842 50  0000 L CNN
+F 0 "J3" H 10880 2842 50  0000 L CNN
 F 1 "SWD" H 10880 2751 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 10800 2800 50  0001 C CNN
 F 3 "~" H 10800 2800 50  0001 C CNN
@@ -1027,10 +1027,10 @@ F 3 "" H 10050 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J3
+L Connector_Generic:Conn_02x06_Odd_Even J2
 U 1 1 60CA00CD
 P 10500 1400
-F 0 "J3" H 10550 1817 50  0000 C CNN
+F 0 "J2" H 10550 1817 50  0000 C CNN
 F 1 "Power" H 10550 1726 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10500 1400 50  0001 C CNN
 F 3 "~" H 10500 1400 50  0001 C CNN
@@ -1109,10 +1109,10 @@ F 3 "" H 8350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J2
+L Connector:USB_B_Micro J1
 U 1 1 60B0F0BF
 P 6600 1250
-F 0 "J2" H 6657 1717 50  0000 C CNN
+F 0 "J1" H 6657 1717 50  0000 C CNN
 F 1 "USB_B_Micro" H 6657 1626 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 6750 1200 50  0001 C CNN
 F 3 "~" H 6750 1200 50  0001 C CNN
@@ -1129,10 +1129,10 @@ Connection ~ 8850 1250
 Wire Wire Line
 	8650 1250 8850 1250
 $Comp
-L Device:CP C10
+L Device:CP C4
 U 1 1 60B9D540
 P 9200 1500
-F 0 "C10" H 9318 1546 50  0000 L CNN
+F 0 "C4" H 9318 1546 50  0000 L CNN
 F 1 "47u" H 9318 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 9238 1350 50  0001 C CNN
 F 3 "~" H 9200 1500 50  0001 C CNN
@@ -1150,10 +1150,10 @@ Wire Wire Line
 Wire Wire Line
 	7850 1250 7850 1400
 $Comp
-L Device:C_Small C9
+L Device:C_Small C3
 U 1 1 60B7BA0C
 P 8850 1500
-F 0 "C9" H 8942 1546 50  0000 L CNN
+F 0 "C3" H 8942 1546 50  0000 L CNN
 F 1 "104" H 8942 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8850 1500 50  0001 C CNN
 F 3 "~" H 8850 1500 50  0001 C CNN
@@ -1161,10 +1161,10 @@ F 3 "~" H 8850 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L Device:C_Small C2
 U 1 1 60B7A582
 P 7850 1500
-F 0 "C8" H 7942 1546 50  0000 L CNN
+F 0 "C2" H 7942 1546 50  0000 L CNN
 F 1 "104" H 7942 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7850 1500 50  0001 C CNN
 F 3 "~" H 7850 1500 50  0001 C CNN
@@ -1172,10 +1172,10 @@ F 3 "~" H 7850 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C7
+L Device:CP C1
 U 1 1 60B79A0D
 P 7500 1500
-F 0 "C7" H 7618 1546 50  0000 L CNN
+F 0 "C1" H 7618 1546 50  0000 L CNN
 F 1 "47u" H 7618 1455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 7538 1350 50  0001 C CNN
 F 3 "~" H 7500 1500 50  0001 C CNN
@@ -1206,10 +1206,10 @@ Wire Wire Line
 Wire Wire Line
 	3500 3600 3650 3600
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J10
+L Connector_Generic:Conn_02x06_Odd_Even J8
 U 1 1 60B34FEB
 P 3850 3800
-F 0 "J10" H 3900 4217 50  0000 C CNN
+F 0 "J8" H 3900 4217 50  0000 C CNN
 F 1 "BxI2C1" H 3900 4126 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 3850 3800 50  0001 C CNN
 F 3 "~" H 3850 3800 50  0001 C CNN
@@ -1279,10 +1279,10 @@ $EndComp
 Wire Wire Line
 	4800 6900 4850 6900
 $Comp
-L Connector_Generic:Conn_01x06 J9
+L Connector_Generic:Conn_01x06 J10
 U 1 1 61009C91
 P 4600 6700
-F 0 "J9" H 4680 6692 50  0000 L CNN
+F 0 "J10" H 4680 6692 50  0000 L CNN
 F 1 "SPI2" H 4680 6601 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4680 6555 50  0001 L CNN
 F 3 "~" H 4600 6700 50  0001 C CNN
@@ -1304,12 +1304,12 @@ Wire Wire Line
 Wire Wire Line
 	4350 5050 4350 5000
 $Comp
-L Device:C_Small C12
+L Device:C_Small C5
 U 1 1 609EBE25
 P 4350 5150
-F 0 "C12" H 4442 5196 50  0000 L CNN
+F 0 "C5" H 4442 5196 50  0000 L CNN
 F 1 "104" H 4442 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 4350 5150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4350 5150 50  0001 C CNN
 F 3 "~" H 4350 5150 50  0001 C CNN
 	1    4350 5150
 	1    0    0    -1  
@@ -1357,10 +1357,10 @@ Wire Wire Line
 Wire Wire Line
 	4150 5100 4200 5100
 $Comp
-L Connector_Generic:Conn_01x07 J11
+L Connector_Generic:Conn_01x07 J9
 U 1 1 6153FBE5
 P 3950 4900
-F 0 "J11" H 3881 5396 50  0000 C CNN
+F 0 "J9" H 3881 5396 50  0000 C CNN
 F 1 "I2C2" H 3881 5329 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 3950 4900 50  0001 C CNN
 F 3 "~" H 3950 4900 50  0001 C CNN
@@ -1622,13 +1622,13 @@ Wire Wire Line
 Wire Wire Line
 	7650 4850 7900 4850
 Text Label 8750 4450 0    50   ~ 0
-PA4
-Text Label 8750 4550 0    50   ~ 0
-PA5
-Text Label 8750 4650 0    50   ~ 0
-PA6
-Text Label 8750 4850 0    50   ~ 0
 PA7
+Text Label 8750 4550 0    50   ~ 0
+PA6
+Text Label 8750 4650 0    50   ~ 0
+PA5
+Text Label 8750 4850 0    50   ~ 0
+PA4
 Wire Wire Line
 	8750 4650 9050 4650
 Wire Wire Line
