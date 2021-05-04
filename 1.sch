@@ -379,8 +379,6 @@ Wire Wire Line
 	5450 5450 5550 5450
 Text HLabel 5450 5350 0    50   Input ~ 0
 PB14
-Text HLabel 5450 5450 0    50   Input ~ 0
-PB15
 Text HLabel 5450 2850 0    50   Input ~ 0
 NRST
 Wire Wire Line
@@ -1719,4 +1717,8 @@ Text HLabel 5450 5150 0    50   Input ~ 0
 PB12
 Text HLabel 2750 4500 2    50   Input ~ 0
 RG_LED
+Text HLabel 5450 5450 0    50   Input ~ 0
+SD_DI
+NoConn ~ 2500 6400
+NoConn ~ 2500 7100
 $EndSCHEMATC

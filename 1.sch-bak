@@ -1106,8 +1106,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 2600 6950 2750
 Connection ~ 6450 2600
-Text HLabel 2750 4500 2    50   Input ~ 0
-RG_LED
 Wire Wire Line
 	10400 2700 10600 2700
 Wire Wire Line
@@ -1719,4 +1717,6 @@ Text HLabel 5450 5250 0    50   Input ~ 0
 PB13
 Text HLabel 5450 5150 0    50   Input ~ 0
 PB12
+Text HLabel 2750 4500 2    50   Input ~ 0
+RG_LED
 $EndSCHEMATC
