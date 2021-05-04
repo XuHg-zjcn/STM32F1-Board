@@ -400,8 +400,6 @@ Text HLabel 5450 2850 0    50   Input ~ 0
 NRST
 Wire Wire Line
 	5450 2850 5550 2850
-Wire Wire Line
-	2600 6900 2600 7300
 Connection ~ 2600 7450
 Wire Wire Line
 	2600 7450 2600 7550
@@ -1616,29 +1614,17 @@ Wire Wire Line
 Wire Wire Line
 	9300 1250 9200 1250
 Connection ~ 9200 1250
-Wire Wire Line
-	800  7400 800  7450
 $Comp
 L Connector:Micro_SD_Card_Det J1
 U 1 1 60953440
-P 1600 6900
-F 0 "J1" H 1550 7617 50  0000 C CNN
-F 1 "Micro_SD_Card" H 1550 7526 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3BT-DSF-PEJS" H 2750 7200 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 6900 50  0001 C CNN
-	1    1600 6900
+P 1600 6800
+F 0 "J1" H 1550 7517 50  0000 C CNN
+F 1 "Micro_SD_Card" H 1550 7426 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3BT-DSF-PEJS" H 2750 7100 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 6800 50  0001 C CNN
+	1    1600 6800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 7300 2600 7300
-Connection ~ 2600 7300
-Wire Wire Line
-	2600 7300 2600 7400
-Wire Wire Line
-	2500 7400 2600 7400
-Connection ~ 2600 7400
-Wire Wire Line
-	2600 7400 2600 7450
 $Comp
 L Device:Crystal_GND3 Y2
 U 1 1 60880457
@@ -1655,4 +1641,18 @@ Wire Wire Line
 Connection ~ 1000 2500
 Wire Wire Line
 	1000 2500 1000 2700
+Wire Wire Line
+	800  7300 800  7450
+Wire Wire Line
+	2600 6900 2600 7200
+Wire Wire Line
+	2500 7200 2600 7200
+Connection ~ 2600 7200
+Wire Wire Line
+	2600 7200 2600 7300
+Wire Wire Line
+	2500 7300 2600 7300
+Connection ~ 2600 7300
+Wire Wire Line
+	2600 7300 2600 7450
 $EndSCHEMATC

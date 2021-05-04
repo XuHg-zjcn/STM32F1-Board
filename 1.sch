@@ -1625,17 +1625,6 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 6800 50  
 	1    1600 6800
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Crystal_GND3 Y2
-U 1 1 60880457
-P 1900 2500
-F 0 "Y2" V 1946 2369 50  0000 R CNN
-F 1 "32.768k" V 1855 2369 50  0000 R CNN
-F 2 "Crystal:Crystal_DS26_D2.0mm_L6.0mm_Horizontal_1EP_style1" H 1900 2500 50  0001 C CNN
-F 3 "~" H 1900 2500 50  0001 C CNN
-	1    1900 2500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1700 2500 1000 2500
 Connection ~ 1000 2500
@@ -1655,4 +1644,15 @@ Wire Wire Line
 Connection ~ 2600 7300
 Wire Wire Line
 	2600 7300 2600 7450
+$Comp
+L Device:Crystal_GND3 Y2
+U 1 1 60880457
+P 1900 2500
+F 0 "Y2" V 1946 2369 50  0000 R CNN
+F 1 "32.768k" V 1855 2369 50  0000 R CNN
+F 2 "Crystal:Crystal_DS26_D2.0mm_L6.0mm_Horizontal_1EP_style1" H 1900 2500 50  0001 C CNN
+F 3 "~" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
