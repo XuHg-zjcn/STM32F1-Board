@@ -708,7 +708,7 @@ L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 60CA00CD
 P 10500 1450
 F 0 "J3" H 10550 1867 50  0000 C CNN
-F 1 "Conn_Power" H 10550 1776 50  0000 C CNN
+F 1 "Power" H 10550 1776 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10500 1450 50  0001 C CNN
 F 3 "~" H 10500 1450 50  0001 C CNN
 	1    10500 1450
@@ -1524,17 +1524,6 @@ Wire Wire Line
 	1900 2700 1900 2650
 Wire Wire Line
 	1750 2700 1900 2700
-$Comp
-L Connector_Generic:Conn_01x06 J10
-U 1 1 6153F296
-P 4100 4550
-F 0 "J10" H 4055 4961 50  0000 L CNN
-F 1 "I2C1" H 4134 4921 50  0000 C TNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4100 4550 50  0001 C CNN
-F 3 "~" H 4100 4550 50  0001 C CNN
-	1    4100 4550
-	1    0    0    -1  
-$EndComp
 Text HLabel 4750 4950 2    50   Input ~ 0
 PB2
 Wire Wire Line
@@ -1694,12 +1683,12 @@ Wire Wire Line
 	6950 2600 6950 2750
 Connection ~ 6450 2600
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J?
+L Connector_Generic:Conn_02x06_Odd_Even J10
 U 1 1 60B34FEB
 P 4050 5650
-F 0 "J?" H 4100 6067 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 4100 5976 50  0000 C CNN
-F 2 "" H 4050 5650 50  0001 C CNN
+F 0 "J10" H 4100 6067 50  0000 C CNN
+F 1 "BxI2C1" H 4100 5976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 4050 5650 50  0001 C CNN
 F 3 "~" H 4050 5650 50  0001 C CNN
 	1    4050 5650
 	1    0    0    -1  
