@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.5)
     (user_trace_width 0.2)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
@@ -2384,7 +2384,8 @@
     )
   )
 
-  (gr_line (start 180.34 132.715) (end 99.06 132.715) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 99.06 129.54) (end 96.52 129.54) (angle -90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 180.34 132.08) (end 99.06 132.08) (layer Edge.Cuts) (width 0.1))
   (gr_text "B10\nB9\nB8" (at 144.78 127.762 270) (layer Dwgs.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify right))
   )
@@ -2467,13 +2468,12 @@
   (gr_circle (center 177.8 90.17) (end 179.07 88.9) (layer Edge.Cuts) (width 0.05) (tstamp 609010A5))
   (gr_circle (center 100.33 128.905) (end 99.06 130.175) (layer Edge.Cuts) (width 0.05) (tstamp 609010A4))
   (gr_circle (center 100.33 90.17) (end 99.06 88.9) (layer Edge.Cuts) (width 0.05) (tstamp 609010A3))
-  (gr_arc (start 99.06 130.175) (end 96.52 130.175) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 180.34 131.445) (end 180.34 132.715) (angle -90) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 180.34 130.81) (end 180.34 132.08) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 179.07 88.9) (end 181.61 88.9) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 99.06 88.9) (end 99.06 86.36) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 181.61 88.9) (end 181.61 131.445) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 181.61 88.9) (end 181.61 130.81) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 99.06 86.36) (end 179.07 86.36) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 96.52 130.175) (end 96.52 88.9) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 96.52 129.54) (end 96.52 88.9) (layer Edge.Cuts) (width 0.1))
   (gr_text "MCO  Tx   Rx" (at 144.653 131.445) (layer Eco1.User)
     (effects (font (size 0.65 0.65) (thickness 0.15)))
   )
@@ -2836,11 +2836,6 @@
   (segment (start 138.43 129.54) (end 138.43 129.032) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 163.322 124.46) (end 159.766 128.016) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 167.64 124.46) (end 163.322 124.46) (width 0.5) (layer B.Cu) (net 8))
-  (segment (start 121.92 129.54) (end 121.92 130.89) (width 0.5) (layer B.Cu) (net 8))
-  (segment (start 121.92 130.89) (end 122.856 131.826) (width 0.5) (layer B.Cu) (net 8))
-  (segment (start 122.856 131.826) (end 137.494 131.826) (width 0.5) (layer B.Cu) (net 8))
-  (segment (start 137.494 131.826) (end 138.43 130.89) (width 0.5) (layer B.Cu) (net 8))
-  (segment (start 138.43 130.89) (end 138.43 129.54) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 139.192 128.016) (end 159.766 128.016) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 138.43 129.54) (end 138.43 128.778) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 138.43 128.778) (end 139.192 128.016) (width 0.5) (layer B.Cu) (net 8))
@@ -2894,6 +2889,11 @@
   (segment (start 123.571 113.908766) (end 123.571 112.776) (width 0.25) (layer F.Cu) (net 8))
   (segment (start 123.614 126.746) (end 123.19 126.746) (width 0.25) (layer F.Cu) (net 8))
   (segment (start 164.322 118.745) (end 162.306 118.745) (width 0.25) (layer F.Cu) (net 8))
+  (segment (start 122.602 131.572) (end 121.92 130.89) (width 0.5) (layer B.Cu) (net 8))
+  (segment (start 137.748 131.572) (end 122.602 131.572) (width 0.5) (layer B.Cu) (net 8))
+  (segment (start 121.92 130.89) (end 121.92 129.54) (width 0.5) (layer B.Cu) (net 8))
+  (segment (start 138.43 130.89) (end 137.748 131.572) (width 0.5) (layer B.Cu) (net 8))
+  (segment (start 138.43 129.54) (end 138.43 130.89) (width 0.5) (layer B.Cu) (net 8))
   (segment (start 170.25 129.64) (end 170.18 129.71) (width 0.25) (layer F.Cu) (net 10))
   (segment (start 167.64 127) (end 170.18 127) (width 2) (layer F.Cu) (net 10))
   (segment (start 170.18 129.54) (end 167.64 129.54) (width 2) (layer F.Cu) (net 10))
@@ -3291,7 +3291,7 @@
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 103.124 133.096) (xy 96.52 133.096) (xy 96.52 126.492) (xy 103.124 126.492)
+        (xy 181.61 92.964) (xy 174.752 92.964) (xy 174.752 86.36) (xy 181.61 86.36)
       )
     )
   )
@@ -3302,7 +3302,7 @@
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 181.864 92.964) (xy 174.752 92.964) (xy 174.752 86.36) (xy 181.864 86.36)
+        (xy 181.61 132.08) (xy 175.26 132.08) (xy 175.26 126.111) (xy 181.61 126.111)
       )
     )
   )
@@ -3313,7 +3313,7 @@
     (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 181.61 132.715) (xy 175.26 132.715) (xy 175.26 126.365) (xy 181.61 126.365)
+        (xy 103.124 132.08) (xy 96.52 132.08) (xy 96.52 126.238) (xy 103.124 126.238)
       )
     )
   )
