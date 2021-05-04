@@ -126,17 +126,6 @@ F 3 "~" H 1000 4950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0105
-U 1 1 608A3AFC
-P 1000 2800
-F 0 "#PWR0105" H 1000 2550 50  0001 C CNN
-F 1 "GND" H 1005 2627 50  0000 C CNN
-F 2 "" H 1000 2800 50  0001 C CNN
-F 3 "" H 1000 2800 50  0001 C CNN
-	1    1000 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal Y1
 U 1 1 60884F0D
 P 1900 1650
@@ -183,69 +172,6 @@ Wire Wire Line
 Connection ~ 1900 2300
 Wire Wire Line
 	1750 1450 1900 1450
-Wire Wire Line
-	1250 1450 1000 1450
-$Comp
-L pspice:CAP C9
-U 1 1 60899DE9
-P 1500 1450
-F 0 "C9" V 1706 1612 50  0000 C BNN
-F 1 "20p" V 1607 1612 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1450 50  0001 C CNN
-F 3 "~" H 1500 1450 50  0001 C CNN
-	1    1500 1450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1000 1450 1000 1850
-$Comp
-L pspice:CAP C10
-U 1 1 6092BDFE
-P 1500 1850
-F 0 "C10" V 1706 2012 50  0000 C BNN
-F 1 "20p" V 1607 2012 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1850 50  0001 C CNN
-F 3 "~" H 1500 1850 50  0001 C CNN
-	1    1500 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L pspice:CAP C11
-U 1 1 6092C5E0
-P 1500 2300
-F 0 "C11" V 1706 2462 50  0000 C BNN
-F 1 "12p" V 1607 2462 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2300 50  0001 C CNN
-F 3 "~" H 1500 2300 50  0001 C CNN
-	1    1500 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L pspice:CAP C12
-U 1 1 6092D115
-P 1500 2700
-F 0 "C12" V 1706 2862 50  0000 C BNN
-F 1 "12p" V 1607 2862 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2700 50  0001 C CNN
-F 3 "~" H 1500 2700 50  0001 C CNN
-	1    1500 2700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1250 1850 1000 1850
-Connection ~ 1000 1850
-Wire Wire Line
-	1000 1850 1000 2300
-Wire Wire Line
-	1250 2300 1000 2300
-Connection ~ 1000 2300
-Wire Wire Line
-	1000 2300 1000 2500
-Wire Wire Line
-	1250 2700 1000 2700
-Connection ~ 1000 2700
-Wire Wire Line
-	1000 2700 1000 2800
 Wire Wire Line
 	2500 6600 3000 6600
 Wire Wire Line
@@ -361,17 +287,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 6050 3500 6900
 Connection ~ 3250 6050
-$Comp
-L pspice:C C8
-U 1 1 60A0DA04
-P 3500 7150
-F 0 "C8" H 3678 7196 50  0000 L CNN
-F 1 "104" H 3678 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 7150 50  0001 C CNN
-F 3 "~" H 3500 7150 50  0001 C CNN
-	1    3500 7150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 7450 3500 7450
 Wire Wire Line
@@ -738,21 +653,16 @@ Wire Wire Line
 Wire Wire Line
 	1750 2700 1900 2700
 $Comp
-L Connector:Micro_SD_Card_Det J1
+L Connector:Micro_SD_Card_Det J11
 U 1 1 60953440
 P 1600 6800
-F 0 "J1" H 1550 7517 50  0000 C CNN
+F 0 "J11" H 1550 7517 50  0000 C CNN
 F 1 "Micro_SD_Card" H 1550 7426 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Hirose_DM3BT-DSF-PEJS" H 2750 7100 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1600 6800 50  0001 C CNN
 	1    1600 6800
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 2500 1000 2500
-Connection ~ 1000 2500
-Wire Wire Line
-	1000 2500 1000 2700
 Wire Wire Line
 	800  7300 800  7450
 Wire Wire Line
@@ -1722,4 +1632,94 @@ Text Label 9700 2900 2    50   ~ 0
 USB_D+
 Wire Wire Line
 	9350 2900 9700 2900
+Wire Wire Line
+	1000 2500 1000 2700
+Connection ~ 1000 2500
+Wire Wire Line
+	1700 2500 1000 2500
+Wire Wire Line
+	1000 2700 1000 2800
+Connection ~ 1000 2700
+Wire Wire Line
+	1250 2700 1000 2700
+Wire Wire Line
+	1000 2300 1000 2500
+Connection ~ 1000 2300
+Wire Wire Line
+	1250 2300 1000 2300
+Wire Wire Line
+	1000 1850 1000 2300
+Connection ~ 1000 1850
+Wire Wire Line
+	1250 1850 1000 1850
+Wire Wire Line
+	1000 1450 1000 1850
+Wire Wire Line
+	1250 1450 1000 1450
+$Comp
+L power:GND #PWR0105
+U 1 1 608A3AFC
+P 1000 2800
+F 0 "#PWR0105" H 1000 2550 50  0001 C CNN
+F 1 "GND" H 1005 2627 50  0000 C CNN
+F 2 "" H 1000 2800 50  0001 C CNN
+F 3 "" H 1000 2800 50  0001 C CNN
+	1    1000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C12
+U 1 1 6092D115
+P 1500 2700
+F 0 "C12" V 1706 2862 50  0000 C BNN
+F 1 "12p" V 1607 2862 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2700 50  0001 C CNN
+F 3 "~" H 1500 2700 50  0001 C CNN
+	1    1500 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C11
+U 1 1 6092C5E0
+P 1500 2300
+F 0 "C11" V 1706 2462 50  0000 C BNN
+F 1 "12p" V 1607 2462 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 2300 50  0001 C CNN
+F 3 "~" H 1500 2300 50  0001 C CNN
+	1    1500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C10
+U 1 1 6092BDFE
+P 1500 1850
+F 0 "C10" V 1706 2012 50  0000 C BNN
+F 1 "20p" V 1607 2012 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1850 50  0001 C CNN
+F 3 "~" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C9
+U 1 1 60899DE9
+P 1500 1450
+F 0 "C9" V 1706 1612 50  0000 C BNN
+F 1 "20p" V 1607 1612 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1500 1450 50  0001 C CNN
+F 3 "~" H 1500 1450 50  0001 C CNN
+	1    1500 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:C C8
+U 1 1 60A0DA04
+P 3500 7150
+F 0 "C8" H 3678 7196 50  0000 L CNN
+F 1 "104" H 3678 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 7150 50  0001 C CNN
+F 3 "~" H 3500 7150 50  0001 C CNN
+	1    3500 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
