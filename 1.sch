@@ -686,7 +686,7 @@ F 1 "32.768k" V 1855 2369 50  0000 R CNN
 F 2 "Crystal:Crystal_DS26_D2.0mm_L6.0mm_Horizontal_1EP_style1" H 1900 2500 50  0001 C CNN
 F 3 "~" H 1900 2500 50  0001 C CNN
 	1    1900 2500
-	0    1    -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C7
