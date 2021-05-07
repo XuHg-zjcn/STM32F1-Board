@@ -19,7 +19,7 @@ U 1 1 60801572
 P 6250 4150
 F 0 "U1" H 6200 2561 50  0000 C CNN
 F 1 "STM32F103C8Tx" H 6200 2470 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5650 2750 50  0000 R CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5650 2750 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 6250 4150 50  0001 C CNN
 	1    6250 4150
 	1    0    0    -1  
@@ -396,42 +396,27 @@ F 3 "~" H 2550 3900 50  0001 C CNN
 	1    2550 3900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9450 2700 9350 2700
-Wire Wire Line
-	9450 2700 9450 2600
 $Comp
 L power:+3.3V #PWR0119
 U 1 1 609E08F0
-P 9450 2600
-F 0 "#PWR0119" H 9450 2450 50  0001 C CNN
-F 1 "+3.3V" H 9465 2773 50  0000 C CNN
-F 2 "" H 9450 2600 50  0001 C CNN
-F 3 "" H 9450 2600 50  0001 C CNN
-	1    9450 2600
+P 9450 2500
+F 0 "#PWR0119" H 9450 2350 50  0001 C CNN
+F 1 "+3.3V" H 9465 2673 50  0000 C CNN
+F 2 "" H 9450 2500 50  0001 C CNN
+F 3 "" H 9450 2500 50  0001 C CNN
+	1    9450 2500
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
-U 1 1 608D3B31
-P 9050 2800
-F 0 "J4" H 9100 3117 50  0000 C CNN
-F 1 "Protected" H 9100 3026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9050 2800 50  0001 C CNN
-F 3 "~" H 9050 2800 50  0001 C CNN
-	1    9050 2800
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J6
 U 1 1 60955773
-P 9250 4550
-F 0 "J6" H 9330 4542 50  0000 L CNN
-F 1 "SPI1" H 9330 4451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9330 4405 50  0001 L CNN
-F 3 "~" H 9250 4550 50  0001 C CNN
-	1    9250 4550
-	1    0    0    -1  
+P 9250 4650
+F 0 "J6" H 9330 4642 50  0000 L CNN
+F 1 "SPI1" H 9330 4551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9330 4505 50  0001 L CNN
+F 3 "~" H 9250 4650 50  0001 C CNN
+	1    9250 4650
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8950 4350 9050 4350
@@ -511,39 +496,34 @@ F 3 "" H 8950 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 4250 8950 4350
-Wire Wire Line
-	8850 2700 8800 2700
 $Comp
 L Device:R R10
 U 1 1 61451B29
-P 8150 2800
-F 0 "R10" H 8220 2846 50  0000 L CNN
-F 1 "10k" H 8220 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2800 50  0001 C CNN
-F 3 "~" H 8150 2800 50  0001 C CNN
-	1    8150 2800
+P 8150 2700
+F 0 "R10" H 8220 2746 50  0000 L CNN
+F 1 "10k" H 8220 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2700 50  0001 C CNN
+F 3 "~" H 8150 2700 50  0001 C CNN
+	1    8150 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 61451B2F
-P 8150 3000
-F 0 "#PWR0127" H 8150 2750 50  0001 C CNN
-F 1 "GND" H 8155 2827 50  0000 C CNN
-F 2 "" H 8150 3000 50  0001 C CNN
-F 3 "" H 8150 3000 50  0001 C CNN
-	1    8150 3000
+P 8150 2900
+F 0 "#PWR0127" H 8150 2650 50  0001 C CNN
+F 1 "GND" H 8155 2727 50  0000 C CNN
+F 2 "" H 8150 2900 50  0001 C CNN
+F 3 "" H 8150 2900 50  0001 C CNN
+	1    8150 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2950 8150 3000
+	8150 2850 8150 2900
 Wire Wire Line
-	8150 2650 8150 2550
+	8150 2550 8850 2550
 Wire Wire Line
-	8150 2550 8800 2550
-Wire Wire Line
-	8800 2550 8800 2700
-Connection ~ 8800 2700
+	8850 2550 8850 2700
 $Comp
 L Switch:SW_Push K3
 U 1 1 60835193
@@ -1018,17 +998,6 @@ F 3 "" H 8350 1850 50  0001 C CNN
 	1    8350 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 60B0F0BF
-P 6600 1250
-F 0 "J1" H 6657 1717 50  0000 C CNN
-F 1 "USB_B_Micro" H 6657 1626 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 6750 1200 50  0001 C CNN
-F 3 "~" H 6750 1200 50  0001 C CNN
-	1    6600 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 1050 7500 1050
 Wire Wire Line
@@ -1113,8 +1082,6 @@ Wire Wire Line
 	3500 4000 3650 4000
 Wire Wire Line
 	3550 3700 3650 3700
-Wire Wire Line
-	3500 3600 3650 3600
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J8
 U 1 1 60B34FEB
@@ -1139,12 +1106,7 @@ F 3 "" H 3500 3500 50  0001 C CNN
 	1    3500 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 3500 3500 3600
-Connection ~ 3500 3600
 Connection ~ 3550 4100
-Wire Wire Line
-	3500 3600 3500 4000
 $Comp
 L power:GND #PWR0125
 U 1 1 61365714
@@ -1207,9 +1169,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 5250 4350 5300
 Wire Wire Line
-	4200 5100 4200 5300
-Connection ~ 4250 5000
-Wire Wire Line
 	4350 5000 4250 5000
 Wire Wire Line
 	4350 5050 4350 5000
@@ -1224,13 +1183,9 @@ F 3 "~" H 4350 5150 50  0001 C CNN
 	1    4350 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 5200 4300 5200
 Text HLabel 4300 5200 2    50   Input ~ 0
 PB2
 Connection ~ 4250 4600
-Wire Wire Line
-	4250 5000 4150 5000
 Wire Wire Line
 	4250 4600 4250 5000
 Wire Wire Line
@@ -1248,7 +1203,6 @@ F 3 "" H 4250 4500 50  0001 C CNN
 	1    4250 4500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4200 5100
 $Comp
 L power:GND #PWR0128
 U 1 1 615BBC08
@@ -1262,21 +1216,6 @@ F 3 "" H 4200 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 4700 4150 4700
-Wire Wire Line
-	4200 5100 4200 4700
-Wire Wire Line
-	4150 5100 4200 5100
-$Comp
-L Connector_Generic:Conn_01x07 J9
-U 1 1 6153FBE5
-P 3950 4900
-F 0 "J9" H 3881 5396 50  0000 C CNN
-F 1 "I2C2" H 3881 5329 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 3950 4900 50  0001 C CNN
-F 3 "~" H 3950 4900 50  0001 C CNN
-	1    3950 4900
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 2500 6400
 NoConn ~ 2500 7100
 Text Label 4350 3600 2    50   ~ 0
@@ -1612,26 +1551,26 @@ Wire Wire Line
 	10150 2800 10600 2800
 Wire Wire Line
 	10150 2900 10600 2900
-Text Label 9700 2800 2    50   ~ 0
+Text Label 8500 2800 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	9350 2800 9700 2800
+	8850 2800 8500 2800
 Text Label 8500 2700 0    50   ~ 0
 BOOT0
 Wire Wire Line
-	8500 2700 8800 2700
+	8500 2700 8850 2700
 Wire Wire Line
-	8500 2800 8850 2800
+	9700 2800 9350 2800
 Wire Wire Line
-	8500 2900 8850 2900
-Text Label 8500 2800 0    50   ~ 0
+	9700 2900 9350 2900
+Text Label 9700 2800 2    50   ~ 0
 SWDIO
-Text Label 8500 2900 0    50   ~ 0
-USB_D-
 Text Label 9700 2900 2    50   ~ 0
+USB_D-
+Text Label 8500 2900 0    50   ~ 0
 USB_D+
 Wire Wire Line
-	9350 2900 9700 2900
+	8850 2900 8500 2900
 Wire Wire Line
 	1000 2500 1000 2700
 Connection ~ 1000 2500
@@ -1723,48 +1662,109 @@ F 3 "~" H 3500 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J12
+L Connector_Generic:Conn_01x04 J12
 U 1 1 609759C3
-P 9250 3500
-F 0 "J12" H 9330 3542 50  0000 L CNN
-F 1 "Conn_01x04" H 9330 3451 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9250 3500 50  0001 C CNN
-F 3 "~" H 9250 3500 50  0001 C CNN
-	1    9250 3500
+P 9900 3700
+F 0 "J12" H 9980 3742 50  0000 L CNN
+F 1 "Conn_01x04" H 9980 3651 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9900 3700 50  0001 C CNN
+F 3 "~" H 9900 3700 50  0001 C CNN
+	1    9900 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 3400 9050 3400
+	9600 3600 9700 3600
 $Comp
 L power:+3V3 #PWR0134
 U 1 1 6097B24C
-P 8950 3300
-F 0 "#PWR0134" H 8950 3150 50  0001 C CNN
-F 1 "+3V3" H 8965 3473 50  0000 C CNN
-F 2 "" H 8950 3300 50  0001 C CNN
-F 3 "" H 8950 3300 50  0001 C CNN
-	1    8950 3300
+P 9600 3500
+F 0 "#PWR0134" H 9600 3350 50  0001 C CNN
+F 1 "+3V3" H 9615 3673 50  0000 C CNN
+F 2 "" H 9600 3500 50  0001 C CNN
+F 3 "" H 9600 3500 50  0001 C CNN
+	1    9600 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 3300 8950 3400
-Text Label 8750 3600 0    50   ~ 0
+	9600 3500 9600 3600
+Text Label 9400 3800 0    50   ~ 0
 PA2
 Wire Wire Line
-	9050 3500 8950 3500
+	9700 3700 9600 3700
 Wire Wire Line
-	8950 3500 8950 3800
+	9600 3700 9600 4000
 $Comp
 L power:GND #PWR0135
 U 1 1 60995CA3
-P 8950 3800
-F 0 "#PWR0135" H 8950 3550 50  0001 C CNN
-F 1 "GND" H 8955 3627 50  0000 C CNN
-F 2 "" H 8950 3800 50  0001 C CNN
-F 3 "" H 8950 3800 50  0001 C CNN
-	1    8950 3800
+P 9600 4000
+F 0 "#PWR0135" H 9600 3750 50  0001 C CNN
+F 1 "GND" H 9605 3827 50  0000 C CNN
+F 2 "" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 3600 9050 3600
+	9400 3800 9700 3800
+Text Label 9400 3900 0    50   ~ 0
+PA3
+Wire Wire Line
+	9700 3900 9400 3900
+$Comp
+L 1-rescue:USB_B_Micro-Connector J1
+U 1 1 60B0F0BF
+P 6600 1250
+F 0 "J1" H 6657 1717 50  0000 C CNN
+F 1 "USB_B_Micro" H 6657 1626 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 6750 1200 50  0001 C CNN
+F 3 "~" H 6750 1200 50  0001 C CNN
+	1    6600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 608D3B31
+P 9050 2800
+F 0 "J4" H 9100 3117 50  0000 C CNN
+F 1 "Protected" H 9100 3026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 9050 2800 50  0001 C CNN
+F 3 "~" H 9050 2800 50  0001 C CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3500 3500 3600
+Wire Wire Line
+	4200 4700 4200 5100
+$Comp
+L Connector_Generic:Conn_01x07 J9
+U 1 1 60BCC7ED
+P 3950 4900
+F 0 "J9" H 3868 5417 50  0000 C CNN
+F 1 "Conn_01x04" H 3868 5326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 3950 4900 50  0001 C CNN
+F 3 "~" H 3950 4900 50  0001 C CNN
+	1    3950 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5000 4250 5000
+Connection ~ 4250 5000
+Wire Wire Line
+	4150 5100 4200 5100
+Connection ~ 4200 5100
+Wire Wire Line
+	4200 5100 4200 5300
+Wire Wire Line
+	4150 5200 4300 5200
+Wire Wire Line
+	3650 3600 3500 3600
+Connection ~ 3500 3600
+Wire Wire Line
+	3500 3600 3500 4000
+Connection ~ 8850 2700
+Wire Wire Line
+	9450 2500 9450 2700
+Wire Wire Line
+	9350 2700 9450 2700
 $EndSCHEMATC
