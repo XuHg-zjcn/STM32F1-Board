@@ -19,7 +19,7 @@ U 1 1 60801572
 P 6250 4150
 F 0 "U1" H 6200 2561 50  0000 C CNN
 F 1 "STM32F103C8Tx" H 6200 2470 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5650 2750 50  0001 R CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5650 2750 50  0000 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 6250 4150 50  0001 C CNN
 	1    6250 4150
 	1    0    0    -1  
@@ -1194,7 +1194,7 @@ U 1 1 61009C91
 P 4600 6700
 F 0 "J10" H 4680 6692 50  0000 L CNN
 F 1 "SPI2" H 4680 6601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4680 6555 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4680 6555 50  0001 L CNN
 F 3 "~" H 4600 6700 50  0001 C CNN
 	1    4600 6700
 	-1   0    0    -1  
@@ -1722,4 +1722,49 @@ F 3 "~" H 3500 7150 50  0001 C CNN
 	1    3500 7150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 609759C3
+P 9250 3500
+F 0 "J?" H 9330 3542 50  0000 L CNN
+F 1 "Conn_01x04" H 9330 3451 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9250 3500 50  0001 C CNN
+F 3 "~" H 9250 3500 50  0001 C CNN
+	1    9250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3400 9050 3400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6097B24C
+P 8950 3300
+F 0 "#PWR?" H 8950 3150 50  0001 C CNN
+F 1 "+3V3" H 8965 3473 50  0000 C CNN
+F 2 "" H 8950 3300 50  0001 C CNN
+F 3 "" H 8950 3300 50  0001 C CNN
+	1    8950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3300 8950 3400
+Text Label 8750 3600 0    50   ~ 0
+PA2
+Wire Wire Line
+	9050 3500 8950 3500
+Wire Wire Line
+	8950 3500 8950 3800
+$Comp
+L power:GND #PWR?
+U 1 1 60995CA3
+P 8950 3800
+F 0 "#PWR?" H 8950 3550 50  0001 C CNN
+F 1 "GND" H 8955 3627 50  0000 C CNN
+F 2 "" H 8950 3800 50  0001 C CNN
+F 3 "" H 8950 3800 50  0001 C CNN
+	1    8950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3600 9050 3600
 $EndSCHEMATC
