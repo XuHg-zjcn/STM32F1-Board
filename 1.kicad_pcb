@@ -2987,7 +2987,7 @@
   (via (at 147.32 100.33) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (segment (start 123.952 111.455) (end 123.952 111.455) (width 0.25) (layer F.Cu) (net 2) (tstamp 609838A7))
   (via (at 123.952 111.455) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
-  (via (at 164.084 112.268) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
+  (via (at 164.338 112.268) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (segment (start 170.18 100.838) (end 170.18 107.95) (width 0.5) (layer F.Cu) (net 3))
   (segment (start 125.712785 116.060785) (end 125.712785 116.050551) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 127 117.348) (end 125.712785 116.060785) (width 0.3) (layer F.Cu) (net 3))
