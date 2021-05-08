@@ -399,12 +399,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0119
 U 1 1 609E08F0
-P 9450 2500
-F 0 "#PWR0119" H 9450 2350 50  0001 C CNN
-F 1 "+3.3V" H 9465 2673 50  0000 C CNN
-F 2 "" H 9450 2500 50  0001 C CNN
-F 3 "" H 9450 2500 50  0001 C CNN
-	1    9450 2500
+P 7650 5400
+F 0 "#PWR0119" H 7650 5250 50  0001 C CNN
+F 1 "+3.3V" H 7665 5573 50  0000 C CNN
+F 2 "" H 7650 5400 50  0001 C CNN
+F 3 "" H 7650 5400 50  0001 C CNN
+	1    7650 5400
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -499,31 +499,27 @@ Wire Wire Line
 $Comp
 L Device:R R10
 U 1 1 61451B29
-P 8150 2700
-F 0 "R10" H 8220 2746 50  0000 L CNN
-F 1 "10k" H 8220 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2700 50  0001 C CNN
-F 3 "~" H 8150 2700 50  0001 C CNN
-	1    8150 2700
-	1    0    0    -1  
+P 8900 5650
+F 0 "R10" H 8970 5696 50  0000 L CNN
+F 1 "10k" H 8970 5605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 5650 50  0001 C CNN
+F 3 "~" H 8900 5650 50  0001 C CNN
+	1    8900 5650
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 61451B2F
-P 8150 2900
-F 0 "#PWR0127" H 8150 2650 50  0001 C CNN
-F 1 "GND" H 8155 2727 50  0000 C CNN
-F 2 "" H 8150 2900 50  0001 C CNN
-F 3 "" H 8150 2900 50  0001 C CNN
-	1    8150 2900
-	1    0    0    -1  
+P 8900 5850
+F 0 "#PWR0127" H 8900 5600 50  0001 C CNN
+F 1 "GND" H 8905 5677 50  0000 C CNN
+F 2 "" H 8900 5850 50  0001 C CNN
+F 3 "" H 8900 5850 50  0001 C CNN
+	1    8900 5850
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2850 8150 2900
-Wire Wire Line
-	8150 2550 8850 2550
-Wire Wire Line
-	8850 2550 8850 2700
+	8900 5800 8900 5850
 $Comp
 L Switch:SW_Push K3
 U 1 1 60835193
@@ -1551,26 +1547,24 @@ Wire Wire Line
 	10150 2800 10600 2800
 Wire Wire Line
 	10150 2900 10600 2900
-Text Label 8500 2800 0    50   ~ 0
+Text Label 7400 5700 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	8850 2800 8500 2800
-Text Label 8500 2700 0    50   ~ 0
+	7750 5700 7400 5700
+Text Label 8600 5600 2    50   ~ 0
 BOOT0
 Wire Wire Line
-	8500 2700 8850 2700
+	8600 5700 8250 5700
 Wire Wire Line
-	9700 2800 9350 2800
-Wire Wire Line
-	9700 2900 9350 2900
-Text Label 9700 2800 2    50   ~ 0
+	8600 5800 8250 5800
+Text Label 8600 5700 2    50   ~ 0
 SWDIO
-Text Label 9700 2900 2    50   ~ 0
+Text Label 8600 5800 2    50   ~ 0
 USB_D-
-Text Label 8500 2900 0    50   ~ 0
+Text Label 7400 5800 0    50   ~ 0
 USB_D+
 Wire Wire Line
-	8850 2900 8500 2900
+	7750 5800 7400 5800
 Wire Wire Line
 	1000 2500 1000 2700
 Connection ~ 1000 2500
@@ -1711,7 +1705,7 @@ PA3
 Wire Wire Line
 	9700 3900 9400 3900
 $Comp
-L 1-rescue:USB_B_Micro-Connector J1
+L 1-rescue:USB_B_Micro-Connector-1-rescue J1
 U 1 1 60B0F0BF
 P 6600 1250
 F 0 "J1" H 6657 1717 50  0000 C CNN
@@ -1719,17 +1713,6 @@ F 1 "USB_B_Micro" H 6657 1626 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 6750 1200 50  0001 C CNN
 F 3 "~" H 6750 1200 50  0001 C CNN
 	1    6600 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
-U 1 1 608D3B31
-P 9050 2800
-F 0 "J4" H 9100 3117 50  0000 C CNN
-F 1 "Protected" H 9100 3026 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 9050 2800 50  0001 C CNN
-F 3 "~" H 9050 2800 50  0001 C CNN
-	1    9050 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1762,9 +1745,30 @@ Wire Wire Line
 Connection ~ 3500 3600
 Wire Wire Line
 	3500 3600 3500 4000
-Connection ~ 8850 2700
 Wire Wire Line
-	9450 2500 9450 2700
+	7650 5400 7650 5600
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 608D3B31
+P 7950 5700
+F 0 "J4" H 8000 6017 50  0000 C CNN
+F 1 "Protected" H 8000 5926 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7950 5700 50  0001 C CNN
+F 3 "~" H 7950 5700 50  0001 C CNN
+	1    7950 5700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9350 2700 9450 2700
+	8250 5600 8300 5600
+Wire Wire Line
+	8300 5600 8300 5400
+Wire Wire Line
+	8300 5400 8900 5400
+Wire Wire Line
+	8900 5400 8900 5500
+Connection ~ 8300 5600
+Wire Wire Line
+	8300 5600 8600 5600
+Wire Wire Line
+	7750 5600 7650 5600
 $EndSCHEMATC
