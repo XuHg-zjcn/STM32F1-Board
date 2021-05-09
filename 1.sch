@@ -1071,8 +1071,6 @@ $EndComp
 Wire Wire Line
 	3550 4100 3650 4100
 Wire Wire Line
-	3500 4000 3650 4000
-Wire Wire Line
 	3550 3700 3650 3700
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J8
@@ -1722,8 +1720,6 @@ Wire Wire Line
 	3650 3600 3500 3600
 Connection ~ 3500 3600
 Wire Wire Line
-	3500 3600 3500 4000
-Wire Wire Line
 	7650 5400 7650 5600
 Wire Wire Line
 	7650 5700 7650 5800
@@ -1864,4 +1860,8 @@ Wire Wire Line
 Connection ~ 10600 3150
 Wire Wire Line
 	10600 3150 10600 3250
+Text Label 3300 4000 0    50   ~ 0
+RG_LED
+Wire Wire Line
+	3650 4000 3300 4000
 $EndSCHEMATC
