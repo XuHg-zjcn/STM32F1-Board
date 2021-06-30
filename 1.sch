@@ -397,45 +397,6 @@ F 3 "~" H 2550 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J6
-U 1 1 60955773
-P 9250 4650
-F 0 "J6" H 9330 4642 50  0000 L CNN
-F 1 "SPI1" H 9330 4551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9330 4505 50  0001 L CNN
-F 3 "~" H 9250 4650 50  0001 C CNN
-	1    9250 4650
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8950 4350 9050 4350
-Wire Wire Line
-	9050 4750 9000 4750
-$Comp
-L power:GND #PWR0121
-U 1 1 60A69B43
-P 9000 5000
-F 0 "#PWR0121" H 9000 4750 50  0001 C CNN
-F 1 "GND" H 9005 4827 50  0000 C CNN
-F 2 "" H 9000 5000 50  0001 C CNN
-F 3 "" H 9000 5000 50  0001 C CNN
-	1    9000 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 4750 9000 5000
-$Comp
-L Connector_Generic:Conn_01x10 J5
-U 1 1 60BF7B89
-P 8100 4350
-F 0 "J5" H 8180 4342 50  0000 L CNN
-F 1 "ADC" H 8180 4251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8100 4350 50  0001 C CNN
-F 3 "~" H 8100 4350 50  0001 C CNN
-	1    8100 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push K2
 U 1 1 60835E17
 P 1950 3900
@@ -472,19 +433,6 @@ Wire Wire Line
 	9950 4750 9950 4850
 Wire Wire Line
 	9950 4750 10050 4750
-$Comp
-L power:+3V3 #PWR0123
-U 1 1 612CC30E
-P 8950 4250
-F 0 "#PWR0123" H 8950 4100 50  0001 C CNN
-F 1 "+3V3" H 8965 4423 50  0000 C CNN
-F 2 "" H 8950 4250 50  0001 C CNN
-F 3 "" H 8950 4250 50  0001 C CNN
-	1    8950 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4250 8950 4350
 $Comp
 L Device:R R10
 U 1 1 61451B29
@@ -1449,22 +1397,22 @@ Wire Wire Line
 	7650 4750 7900 4750
 Wire Wire Line
 	7650 4850 7900 4850
-Text Label 8750 4450 0    50   ~ 0
+Text Label 8650 4650 2    50   ~ 0
 PA7
-Text Label 8750 4550 0    50   ~ 0
+Text Label 8650 4550 2    50   ~ 0
 PA6
-Text Label 8750 4650 0    50   ~ 0
+Text Label 8650 4450 2    50   ~ 0
 PA5
-Text Label 8750 4850 0    50   ~ 0
+Text Label 8650 4250 2    50   ~ 0
 PA4
 Wire Wire Line
-	8750 4650 9050 4650
+	8650 4450 8400 4450
 Wire Wire Line
-	8750 4550 9050 4550
+	8650 4550 8400 4550
 Wire Wire Line
-	8750 4450 9050 4450
+	8650 4650 8400 4650
 Wire Wire Line
-	8750 4850 9050 4850
+	8650 4250 8400 4250
 Text Label 9800 4450 0    50   ~ 0
 PA8
 Text Label 9800 4550 0    50   ~ 0
@@ -1631,44 +1579,19 @@ F 3 "~" H 9900 3700 50  0001 C CNN
 	1    9900 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 3600 9700 3600
 $Comp
 L power:+3V3 #PWR0134
 U 1 1 6097B24C
-P 9600 3500
-F 0 "#PWR0134" H 9600 3350 50  0001 C CNN
-F 1 "+3V3" H 9615 3673 50  0000 C CNN
-F 2 "" H 9600 3500 50  0001 C CNN
-F 3 "" H 9600 3500 50  0001 C CNN
-	1    9600 3500
-	1    0    0    -1  
+P 8850 3850
+F 0 "#PWR0134" H 8850 3700 50  0001 C CNN
+F 1 "+3V3" H 8865 4023 50  0000 C CNN
+F 2 "" H 8850 3850 50  0001 C CNN
+F 3 "" H 8850 3850 50  0001 C CNN
+	1    8850 3850
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 3500 9600 3600
-Text Label 9400 3800 0    50   ~ 0
+Text Label 8650 4150 2    50   ~ 0
 PA2
-Wire Wire Line
-	9700 3700 9600 3700
-Wire Wire Line
-	9600 3700 9600 4000
-$Comp
-L power:GND #PWR0135
-U 1 1 60995CA3
-P 9600 4000
-F 0 "#PWR0135" H 9600 3750 50  0001 C CNN
-F 1 "GND" H 9605 3827 50  0000 C CNN
-F 2 "" H 9600 4000 50  0001 C CNN
-F 3 "" H 9600 4000 50  0001 C CNN
-	1    9600 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 3800 9700 3800
-Text Label 9400 3900 0    50   ~ 0
-PA3
-Wire Wire Line
-	9700 3900 9400 3900
 $Comp
 L 1-rescue:USB_B_Micro-Connector-1-rescue J1
 U 1 1 60B0F0BF
@@ -1868,4 +1791,51 @@ Wire Wire Line
 	7700 5700 7700 5900
 Wire Wire Line
 	7350 5800 7850 5800
+$Comp
+L Connector_Generic:Conn_02x10_Top_Bottom J?
+U 1 1 60DE3224
+P 8100 4350
+F 0 "J?" H 8150 4967 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8150 4876 50  0000 C CNN
+F 2 "" H 8100 4350 50  0001 C CNN
+F 3 "~" H 8100 4350 50  0001 C CNN
+	1    8100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4350 8750 4850
+$Comp
+L power:GND #PWR0121
+U 1 1 60A69B43
+P 8750 4950
+F 0 "#PWR0121" H 8750 4700 50  0001 C CNN
+F 1 "GND" H 8755 4777 50  0000 C CNN
+F 2 "" H 8750 4950 50  0001 C CNN
+F 3 "" H 8750 4950 50  0001 C CNN
+	1    8750 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4350 8400 4350
+Wire Wire Line
+	8400 4150 8650 4150
+Wire Wire Line
+	8400 4050 8750 4050
+Wire Wire Line
+	8750 4050 8750 4350
+Connection ~ 8750 4350
+Wire Wire Line
+	8400 4850 8750 4850
+Connection ~ 8750 4850
+Wire Wire Line
+	8750 4850 8750 4950
+Wire Wire Line
+	8850 4750 8850 3950
+Wire Wire Line
+	8400 4750 8850 4750
+Wire Wire Line
+	8850 3850 8850 3950
+Connection ~ 8850 3950
+Wire Wire Line
+	8400 3950 8850 3950
 $EndSCHEMATC
