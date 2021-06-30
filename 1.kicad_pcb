@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 90)
+    (drawings 92)
     (tracks 785)
     (zones 0)
     (modules 50)
@@ -2536,6 +2536,8 @@
     )
   )
 
+  (gr_line (start 154.94 128.27) (end 154.94 131.572) (layer F.SilkS) (width 0.12))
+  (gr_line (start 147.32 128.27) (end 154.94 128.27) (layer F.SilkS) (width 0.12))
   (gr_line (start 110.49 106.172) (end 110.49 104.648) (layer B.SilkS) (width 0.12))
   (gr_line (start 110.49 107.95) (end 110.49 109.474) (layer B.SilkS) (width 0.12))
   (gr_poly (pts (xy 119.15 95.95) (xy 118 95.95) (xy 118 94.55) (xy 119.15 94.55)) (layer F.Paste) (width 0.1))
@@ -2715,7 +2717,7 @@
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "3V3 GND IRx  NSS GND SCK MISO MOSI 3V3 GND" (at 160.274 131.318) (layer F.SilkS) (tstamp 6091D35C)
-    (effects (font (size 0.65 0.65) (thickness 0.14)))
+    (effects (font (size 0.65 0.65) (thickness 0.15)))
   )
   (gr_circle (center 99.695 128.905) (end 98.425 130.175) (layer Edge.Cuts) (width 0.05) (tstamp 609010A5))
   (gr_circle (center 178.435 89.535) (end 179.705 88.265) (layer Edge.Cuts) (width 0.05) (tstamp 609010A4))
