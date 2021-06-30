@@ -1569,17 +1569,6 @@ F 3 "~" H 3500 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J12
-U 1 1 609759C3
-P 9900 3700
-F 0 "J12" H 9980 3742 50  0000 L CNN
-F 1 "Conn_01x04" H 9980 3651 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9900 3700 50  0001 C CNN
-F 3 "~" H 9900 3700 50  0001 C CNN
-	1    9900 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0134
 U 1 1 6097B24C
 P 8850 3850
@@ -1792,12 +1781,12 @@ Wire Wire Line
 Wire Wire Line
 	7350 5800 7850 5800
 $Comp
-L Connector_Generic:Conn_02x10_Top_Bottom J?
+L Connector_Generic:Conn_02x10_Odd_Even J5
 U 1 1 60DE3224
 P 8100 4350
-F 0 "J?" H 8150 4967 50  0000 C CNN
+F 0 "J5" H 8150 4967 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 8150 4876 50  0000 C CNN
-F 2 "" H 8100 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8100 4350 50  0001 C CNN
 F 3 "~" H 8100 4350 50  0001 C CNN
 	1    8100 4350
 	1    0    0    -1  
