@@ -1,7 +1,7 @@
 *.bak
 fp-info-cache
 /*-backups
+/gerber
 *.kicad_prl
 *.kicad_pcb-bak
-*.png
-*.jpg
+*.csv
